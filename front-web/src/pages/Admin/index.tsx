@@ -1,6 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Categories from './components/Categories';
 import Navbar from './components/Navbar';
+import Products from './components/Products';
+import Users from './components/Users';
 import './styles.scss';
 
 const Admin = () => (
@@ -9,13 +12,13 @@ const Admin = () => (
         <div className="admin-content">
             <Switch>
                 <Route path="/admin/products">
-                    <h1>Products</h1>
+                    <Products />
                 </Route>
                 <Route path="/admin/categories">
-                    <h1>Categories</h1>
+                    <Categories />
                 </Route>
                 <Route path="/admin/users">
-                    <h1>Users</h1>
+                    <Users />
                 </Route>
             </Switch>
         </div>
